@@ -21,9 +21,9 @@ function App() {
 
   return (
     <div className="wrapper">
-      {width.width > 820 && <video src={videoBack} style={{width: '100%', height: '100%', top: 0, right: 0, bottom: 0, letf: 0}} autoPlay loop muted />}
-      {(width.width < 821 && width.width > 426) && <video src={videoTab} style={{width: 'auto', height: '100vh', top: 0, right: 0, bottom: 0, letf: 0}} autoPlay loop muted />}
-      {width.width < 426 && <video src={videoMob} style={{width: 'auto', height: '100vh', top: 0, right: 0, bottom: 0, letf: 0}} autoPlay loop muted />}
+      {width.width > 820 && <video src={videoBack} style={{width: '100%', height: '100%', top: 0, right: 0, bottom: 0, letf: 0}} autoPlay playsInline loop muted />}
+      {(width.width < 821 && width.width > 426) && <video src={videoTab} style={{width: 'auto', height: '100vh', top: 0, right: 0, bottom: 0, letf: 0}} autoPlay playsInline loop muted />}
+      {width.width < 426 && <video src={videoMob} style={{width: 'auto', height: '100vh', top: 0, right: 0, bottom: 0, letf: 0}} autoPlay playsInline loop muted />}
     </div>
   );
 }
